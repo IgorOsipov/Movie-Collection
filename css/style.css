@@ -354,3 +354,65 @@ a, a:hover, button, button:hover, input:hover, .anime {
   top: 2px;
   cursor: pointer;
 }
+
+.content .movie_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.content .movie_box .movie_item {
+  width: 320px;
+  height: 240px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.content .movie_box .movie_item img {
+  height: 100%;
+  width: auto;
+}
+
+.content .movie_box .movie_item .title {
+  position: absolute;
+  right: 28px;
+  bottom: 68px;
+  font-size: 1.5em;
+  font-family: "Oswald";
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.6);
+}
+
+.content .movie_box .movie_item .movie_info {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 265px;
+  height: 50px;
+  opacity: 0.8;
+  background-color: #3e8d9f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.content .movie_box .movie_item .movie_info p {
+  font-size: 0.8em;
+  font-family: "Myriad Pro";
+  color: white;
+  line-height: 1.2;
+}
