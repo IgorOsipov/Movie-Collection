@@ -23,7 +23,7 @@
 }
 
 @font-face {
-  font-family: 'Proxima Nova';
+  font-family: 'ProximaNova';
   src: url("../src/fonts/ProximaNova-Regular.eot");
   src: url("../src/fonts/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("../src/fonts/ProximaNova-Regular.woff2") format("woff2"), url("../src/fonts/ProximaNova-Regular.woff") format("woff"), url("../src/fonts/ProximaNova-Regular.ttf") format("truetype"), url("../src/fonts/ProximaNova-Regular.svg#ProximaNova-Regular") format("svg");
   font-weight: normal;
@@ -31,7 +31,7 @@
 }
 
 @font-face {
-  font-family: 'Proxima Nova';
+  font-family: 'ProximaNova';
   src: url("../src/fonts/ProximaNova-Semibold.eot");
   src: url("../src/fonts/ProximaNova-Semibold.eot?#iefix") format("embedded-opentype"), url("../src/fonts/ProximaNova-Semibold.woff2") format("woff2"), url("../src/fonts/ProximaNova-Semibold.woff") format("woff"), url("../src/fonts/ProximaNova-Semibold.ttf") format("truetype"), url("../src/fonts/ProximaNova-Semibold.svg#ProximaNova-Semibold") format("svg");
   font-weight: 600;
@@ -415,4 +415,115 @@ a, a:hover, button, button:hover, input:hover, .anime {
   font-family: "Myriad Pro";
   color: white;
   line-height: 1.2;
+}
+
+.content .pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 0.8em;
+  font-family: "Roboto";
+  font-weight: 500;
+  color: black;
+  line-height: 1.2;
+  margin-bottom: 35px;
+}
+
+.content .pagination .pages_count {
+  margin-right: 35px;
+}
+
+.content .pagination .items_per_page {
+  margin-right: 45px;
+}
+
+.content .pagination .buttons input {
+  border: none;
+  height: 20px;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+footer {
+  padding-top: 30px;
+  background-color: #525252;
+}
+
+footer h2 {
+  font-size: 20px;
+  font-family: "ProximaNova";
+  color: #f3eeea;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+footer .signup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-right: 45px;
+}
+
+footer .signup a {
+  margin-top: 25px;
+  text-decoration: none;
+  background-color: #4999af;
+  font-size: 0.9em;
+  font-family: "Myriad Pro";
+  color: #f3eeea;
+  text-transform: uppercase;
+  line-height: 1.2;
+  border-radius: 3px;
+  padding: 12px 100px;
+}
+
+footer .service {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+footer .service h3 {
+  font-size: 1em;
+  font-family: "ProximaNova";
+  color: #f3eeea;
+  line-height: 1.2;
+}
+
+footer .service p {
+  font-size: 0.6em;
+  font-family: "ProximaNova";
+  color: #b3b3b3;
+  line-height: 1.2;
+}
+
+footer .contacs ul {
+  list-style: none;
+}
+
+footer .footer_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 15px;
 }

@@ -290,6 +290,99 @@
             }           
               
         }
-    }  
+    } 
+    
+    .pagination{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        font-size: 0.8em;
+        font-family: "Roboto";
+        font-weight: 500;
+        color: rgb(0, 0, 0);
+        line-height: 1.2; 
+        
+        margin-bottom: 35px;
+
+        .pages_count{
+            margin-right: 35px;
+        }
+
+        .items_per_page{
+            margin-right: 45px;
+        }
+
+        .buttons{
+            input{
+                border: none;
+                height: 20px;
+                font-size: 1em; 
+                font-weight: 500;              
+            }
+        }
+    }
+}
+
+footer{
+    padding-top: 30px;
+    background-color: #525252; 
+
+    h2{
+        font-size: 20px;
+        font-family: "ProximaNova";
+        color: rgb(243, 238, 234);
+        line-height: 1.2;    
+        text-transform: uppercase;      
+    }
+
+    .signup{
+        display: flex;
+        flex-direction: column;
+        margin-right: 45px;
+        a{
+            margin-top: 25px;
+            text-decoration: none;
+            background-color: #4999af;
+            font-size: 0.9em;
+            font-family: "Myriad Pro";
+            color: rgb(243, 238, 234);
+            text-transform: uppercase;
+            line-height: 1.2; 
+            border-radius: 3px;
+            padding: 12px 100px;
+        }
+    }
+
+    .service{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        h3{
+            font-size: 1em;
+            font-family: "ProximaNova";
+            color: rgb(243, 238, 234);
+            line-height: 1.2;
+        }
+        p{
+            font-size: 0.6em;
+            font-family: "ProximaNova";
+            color: rgb(179, 179, 179);
+            line-height: 1.2;
+        }
+    }
+
+    .contacs{
+        ul{
+            list-style: none;
+        }
+    }
+
+    .footer_box{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }     
 }
   
