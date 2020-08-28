@@ -1,0 +1,242 @@
+@import './fonts.scss';
+@import './preinstall.scss';
+    
+
+.main_menu{
+    background-color:#fff;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 120px;
+
+    display: flex;
+    justify-content: space-between;
+
+    .logo{
+        max-width: 195px;
+        
+        a{
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            height: 100%;
+            margin-left: 18px;
+            
+            .logo_title{
+                margin-left: 10px;
+            }
+            
+            img{
+                width: 57px;
+                height: 58px;
+            }
+        }
+
+
+        h1{
+            font-size: 1.55em;
+            font-family: "Oswald";
+            color: rgb(114, 115, 114);
+            font-weight: bold;
+            text-transform: uppercase;
+            line-height: 1.2; 
+            letter-spacing: 0.2em;         
+        }
+        h2{
+            font-size: 0.8em;
+            font-family: "Oswald";
+            color: rgb(27, 127, 155);
+            line-height: 1.2;
+            letter-spacing: 0.26em;
+        }
+          
+    }
+    .menu{
+        display: flex;
+        justify-content: space-around;
+        min-width: 516px;
+
+        li{
+            list-style: none;
+            display: flex;
+            align-items: center;
+            a{
+                font-size: 0.75em;
+                font-family: "Roboto";
+                color: rgb(102, 131, 51);
+                font-weight: 600;
+                line-height: 1.2;
+                text-decoration: none; 
+                text-transform: uppercase; 
+                &:hover{
+                    color: rgb(27, 127, 155);
+                    font-weight: bold;
+                }   
+            }
+        }
+    }
+}
+
+#slider{
+    .slide{
+        position: relative;
+        img{
+            width: 100%;
+        }
+        .banner_descr{
+            width: 459px;
+            height: 157px;
+            background-color: #4594ab;
+            display: block;
+            left: 14vw;
+            bottom: 40px;
+            z-index: 30;
+            position: absolute;
+            padding: 22px;
+
+            p{
+               font-size: 1.7em;
+                font-family: "Oswald";
+                color: rgb(255, 255, 255);
+                line-height: 1.2;
+                .bold{
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    
+    .slick-prev{
+        left: 0;
+
+        &:hover{
+            &::before,&::after{
+                box-shadow: 0px 0px 22px 1px rgba(117,117,117,1);
+            }
+        }
+
+        &::before,&::after{
+            background-color: #fff;
+            opacity: 1;
+        }
+        &::before{
+            position: absolute;
+            content: '';
+            display: block;
+            transform: translateX(8px) translateY(-12px) rotateZ(-60deg);
+            width: 30px;
+            height: 3px;
+            left: 0;
+            
+        }&::after{
+            position: absolute;
+            content: '';
+            display: block;
+            transform: translateX(8px) translateY(12px) rotateZ(60deg);
+            width: 30px;
+            height: 3px;
+            left: 0;
+           
+        }
+    }
+    .slick-next{
+        right: 0;
+        &:hover{
+            &::before,&::after{
+                box-shadow: 0px 0px 22px 1px rgba(117,117,117,1);
+            }
+        }
+
+        &::before,&::after{
+            background-color: #fff;
+            opacity: 1;
+        }
+        &::before{
+            position: absolute;
+            content: '';
+            display: block;
+            transform: translateX(-8px) translateY(-12px) rotateZ(60deg);
+            width: 30px;
+            height: 3px;
+            right: 0;
+            
+        }&::after{
+            position: absolute;
+            content: '';
+            display: block;
+            transform: translateX(-8px) translateY(12px) rotateZ(-60deg);
+            width: 30px;
+            height: 3px;
+            right: 0;
+           
+        }
+
+    }
+    .slick-arrow {
+        background-color: #000;
+        opacity: 0.702;
+        position: absolute;
+        z-index: 2;
+        width: 50px;
+        height: 90px;
+        
+        
+    }
+
+    
+
+    
+      
+
+}
+
+.content{
+    .content_search{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 50px;
+        margin-bottom: 25px;
+        .content_title{
+            font-size: 1.4em;
+            font-family: "Oswald";
+            color: rgb(73, 153, 175);
+            font-weight: bold;
+            line-height: 1.2;
+            max-width: 172px;
+        }
+        #search{
+            width: 100%;
+            height: 44px;
+            border-width: 1px;
+            border-color: rgb(73, 153, 175);
+            border-style: solid;
+            font-size: 0.8em;
+            color: rgb(51, 51, 51);
+            font-family: "Roboto";
+            padding-left: 15px;
+        }
+
+        .input_field{
+            width: 75%;
+            height: 44px;
+            position: relative;
+        }
+        button{
+            background-image: url('../src/icons/search.png');
+            height: 40px;
+            width: 40px;
+            background-repeat: no-repeat;
+            background-position: center center;
+            border: none;
+            position: absolute;
+            right: 2px;
+            top:2px;
+            cursor: pointer;
+        }
+    }
+      
+}
+  
