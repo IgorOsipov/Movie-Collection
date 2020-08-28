@@ -42,5 +42,33 @@ a, a:hover, button, button:hover, input:hover, .anime{
   color: rgb(27, 127, 155) !important;
 }
 
+#menu_button{
+  display: none;
+  position: absolute;
+  left: 25px;
+  top: 25px;
+  z-index: 2;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: rgb(27, 127, 155);
+  border-radius: 50%;
+  border: 1px solid #fff;
+  padding: unset;
+  height: 50px;
+  width: 50px;
+  
+}
+
+#black_fill{
+  display: none;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  background-color: rgba(0,0,0,0.5);
+}
+
 
 

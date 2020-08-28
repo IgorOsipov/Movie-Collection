@@ -92,6 +92,33 @@ a, a:hover, button, button:hover, input:hover, .anime {
   color: #1b7f9b !important;
 }
 
+#menu_button {
+  display: none;
+  position: absolute;
+  left: 25px;
+  top: 25px;
+  z-index: 2;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #1b7f9b;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  padding: unset;
+  height: 50px;
+  width: 50px;
+}
+
+#black_fill {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 .main_menu {
   background-color: #fff;
   position: absolute;
@@ -534,6 +561,7 @@ footer .contacs {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  margin-right: 30px;
 }
 
 footer .contacs ul {
@@ -618,4 +646,212 @@ footer .copyrights p {
   font-family: "Myriad Pro";
   color: #b3b3b3;
   line-height: 1.2;
+}
+
+@media screen and (max-width: 1370px) {
+  .main_wrapper {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .main_wrapper {
+    width: 85%;
+  }
+  .content .movie_box {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .main_wrapper {
+    width: 98%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .main_wrapper {
+    width: 92%;
+  }
+  .menu_box {
+    display: none;
+  }
+  #menu_button {
+    display: block;
+  }
+  .main_menu {
+    background-color: #fff;
+    position: fixed;
+    width: 320px;
+    z-index: 51;
+    left: 0;
+    top: 0;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .main_menu .logo {
+    margin-top: 20px;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+  }
+  .main_menu .logo a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-decoration: none;
+    height: 100%;
+    margin-left: 18px;
+  }
+  .main_menu .logo a .logo_title {
+    margin-left: 10px;
+  }
+  .main_menu .logo a img {
+    width: 57px;
+    height: 58px;
+  }
+  .main_menu .menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    min-width: 320px;
+    margin-top: 20px;
+  }
+  .main_menu .menu li a {
+    font-size: 1em;
+    padding: 15px;
+  }
+  footer .footer_box h2 {
+    font-size: 0.8em;
+  }
+  footer .service h3 {
+    font-size: 0.8em;
+  }
+  footer .subscribe {
+    margin-right: 25px;
+  }
+  footer .subscribe a {
+    padding: 12px 66px;
+    line-height: 0.8;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content .content_search {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-top: 25px;
+  }
+  .content .content_search .input_field {
+    margin-top: 25px;
+  }
+  .content .pagination {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .content .pagination .pages_count {
+    margin-right: 5px;
+    margin-bottom: 10px;
+  }
+  .content .pagination .items_per_page {
+    margin-right: 5px;
+    margin-bottom: 10px;
+  }
+  footer .footer_box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  footer .footer_box h2 {
+    text-align: center;
+  }
+  footer .service {
+    margin-top: 20px;
+  }
+  footer .service h3, footer .service p {
+    text-align: center;
+  }
+  footer .contacs {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #menu_button {
+    position: fixed;
+    top: unset;
+    left: 25px;
+    bottom: 25px;
+    right: unset;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    padding: unset;
+    height: 50px;
+    width: 50px;
+  }
+  #slider .slide .banner_descr {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #slider .slide .banner_descr {
+    padding: 4px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  #slider .slide .banner_descr p {
+    font-size: 1.3em;
+    text-align: center;
+    vertical-align: center;
+  }
+  .main_menu {
+    width: 240px;
+  }
+  .main_menu .menu {
+    width: 240px;
+    min-width: unset;
+  }
 }

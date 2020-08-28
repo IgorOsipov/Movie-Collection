@@ -1,0 +1,208 @@
+@media screen and (max-width: 1370px){
+    .main_wrapper{
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 1300px){
+    .main_wrapper{
+        width: 85%;
+    }
+    .content{
+        .movie_box{
+            justify-content: space-around;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .main_wrapper{
+        width: 98%;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .main_wrapper{
+        width: 92%;
+    }
+    .menu_box{
+        display: none;
+    }
+    #menu_button{
+        display: block;
+    }
+    .main_menu{
+        background-color:#fff;
+        position: fixed;
+        width: 320px;
+        z-index: 51;
+        left: 0;
+        top: 0;
+        height: 100%;
+    
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+
+        .logo{
+            margin-top: 20px;
+            align-self: center;          
+            a{
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                height: 100%;
+                margin-left: 18px;
+                
+                .logo_title{
+                    margin-left: 10px;
+                }
+                
+                img{
+                    width: 57px;
+                    height: 58px;
+                }
+            }
+        }
+
+        .menu{
+            flex-direction: column;
+            align-items: center;
+            min-width: 320px;
+
+            margin-top: 20px;
+
+            li{
+                a{
+                    font-size: 1em;
+                    padding: 15px;
+                }
+            }
+        }
+
+        
+    }
+
+    footer{
+        .footer_box{
+            h2{
+                font-size: 0.8em;
+            }
+        }
+
+        .service{
+            h3{
+                font-size: 0.8em;
+            }
+        }
+        .subscribe{
+            margin-right: 25px;
+            a{
+                padding: 12px 66px;
+                line-height: 0.8;
+                align-self: center;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    .content{
+        .content_search{
+            flex-direction: column;
+            margin-top: 25px;
+            .input_field{
+                margin-top: 25px;
+            }
+        }
+        .pagination{
+            justify-content: center;
+            flex-direction: column;
+            .pages_count{
+                margin-right: 5px;
+                margin-bottom: 10px;
+            }
+    
+            .items_per_page{
+                margin-right: 5px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    
+    footer{
+        .footer_box{
+            flex-direction: column;
+            align-items: center;
+            h2{
+                text-align: center;
+            }
+        }
+
+        .service{
+            margin-top: 20px;
+            h3, p{
+                text-align: center;
+            }
+        }
+
+        .contacs{
+            margin-top: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 576px){
+    #menu_button{
+        position: fixed;
+        top: unset;
+        left: 25px;
+        bottom: 25px;
+        right: unset;
+        border-radius: 50%;
+        border: 1px solid #fff;
+        padding: unset;
+        height: 50px;
+        width: 50px;
+    }
+    #slider{
+        .slide{
+            .banner_descr{
+                left:0;
+                bottom: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px){
+    #slider{
+        .slide{
+            .banner_descr{
+                padding: 4px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                p{
+                    font-size: 1.3em;
+                    text-align: center;
+                    vertical-align: center;
+                }
+            }
+        }
+    }
+
+    .main_menu{
+        width: 240px;
+        .menu{
+            width: 240px;
+            min-width: unset;
+        }
+    }
+}
+
+
+

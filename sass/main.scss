@@ -380,6 +380,7 @@ footer{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        margin-right: 30px;
         ul{
             list-style: none;
             display: flex;
@@ -448,3 +449,6 @@ footer{
     }
 }
   
+
+
+@import './adaptive.scss';
