@@ -183,6 +183,9 @@ a, a:hover, button, button:hover, input:hover, .anime {
 .main_menu .menu li a:hover {
   color: #1b7f9b;
   font-weight: bold;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 #slider .slide {
@@ -448,6 +451,14 @@ a, a:hover, button, button:hover, input:hover, .anime {
   height: 20px;
   font-size: 1em;
   font-weight: 500;
+  cursor: pointer;
+}
+
+.content .pagination .buttons input:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  font-weight: 600;
 }
 
 footer {
@@ -455,15 +466,7 @@ footer {
   background-color: #525252;
 }
 
-footer h2 {
-  font-size: 20px;
-  font-family: "ProximaNova";
-  color: #f3eeea;
-  line-height: 1.2;
-  text-transform: uppercase;
-}
-
-footer .signup {
+footer .subscribe {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -474,7 +477,7 @@ footer .signup {
   margin-right: 45px;
 }
 
-footer .signup a {
+footer .subscribe a {
   margin-top: 25px;
   text-decoration: none;
   background-color: #4999af;
@@ -485,6 +488,12 @@ footer .signup a {
   line-height: 1.2;
   border-radius: 3px;
   padding: 12px 100px;
+}
+
+footer .subscribe a:hover {
+  -webkit-transform: scale(0.995);
+  -ms-transform: scale(0.995);
+  transform: scale(0.995);
 }
 
 footer .service {
@@ -514,8 +523,69 @@ footer .service p {
   line-height: 1.2;
 }
 
+footer .contacs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
 footer .contacs ul {
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-bottom: 5px;
+}
+
+footer .contacs ul li:hover {
+  -webkit-transform: scale(0.98);
+  -ms-transform: scale(0.98);
+  transform: scale(0.98);
+}
+
+footer .contacs .icon-facebook {
+  background-image: url("../src/icons/sprite.png");
+  background-position: -32px 0px;
+  width: 32px;
+  height: 32px;
+}
+
+footer .contacs .icon-paypal {
+  background-image: url("../src/icons/sprite.png");
+  background-position: 0px -32px;
+  width: 32px;
+  height: 32px;
+}
+
+footer .contacs .icon-twitter {
+  background-image: url("../src/icons/sprite.png");
+  background-position: -32px -32px;
+  width: 32px;
+  height: 32px;
+}
+
+footer .contacs .icon-youtube {
+  background-image: url("../src/icons/sprite.png");
+  background-position: -64px 0px;
+  width: 32px;
+  height: 32px;
+}
+
+footer .contacs .icon-email {
+  background-image: url("../src/icons/sprite.png");
+  background-position: 0px 0px;
+  width: 32px;
+  height: 32px;
 }
 
 footer .footer_box {
@@ -526,4 +596,26 @@ footer .footer_box {
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin-bottom: 15px;
+}
+
+footer .footer_box h2 {
+  font-size: 20px;
+  font-family: "ProximaNova";
+  color: #f3eeea;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+footer .copyrights {
+  width: 100%;
+  border-top: 1px solid rgba(107, 107, 106, 0.8);
+  padding-top: 16px;
+  padding-bottom: 27px;
+}
+
+footer .copyrights p {
+  font-size: 0.6em;
+  font-family: "Myriad Pro";
+  color: #b3b3b3;
+  line-height: 1.2;
 }

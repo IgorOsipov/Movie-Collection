@@ -73,6 +73,7 @@
                 &:hover{
                     color: rgb(27, 127, 155);
                     font-weight: bold;
+                    transform: scale(1.1);
                 }   
             }
         }
@@ -318,7 +319,12 @@
                 border: none;
                 height: 20px;
                 font-size: 1em; 
-                font-weight: 500;              
+                font-weight: 500; 
+                cursor: pointer;
+                &:hover{
+                    transform: scale(1.1);
+                    font-weight: 600;
+                }             
             }
         }
     }
@@ -328,15 +334,9 @@ footer{
     padding-top: 30px;
     background-color: #525252; 
 
-    h2{
-        font-size: 20px;
-        font-family: "ProximaNova";
-        color: rgb(243, 238, 234);
-        line-height: 1.2;    
-        text-transform: uppercase;      
-    }
+    
 
-    .signup{
+    .subscribe{
         display: flex;
         flex-direction: column;
         margin-right: 45px;
@@ -351,6 +351,9 @@ footer{
             line-height: 1.2; 
             border-radius: 3px;
             padding: 12px 100px;
+            &:hover{
+                transform: scale(0.995);
+            }
         }
     }
 
@@ -374,8 +377,47 @@ footer{
     }
 
     .contacs{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         ul{
             list-style: none;
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 5px;
+            li:hover{
+                transform: scale(0.98);
+            }
+        }
+        .icon-facebook {
+            background-image: url('../src/icons/sprite.png');
+            background-position: -32px 0px;
+            width: 32px;
+            height: 32px;
+        }
+        .icon-paypal {
+            background-image: url('../src/icons/sprite.png');
+            background-position: 0px -32px;
+            width: 32px;
+            height: 32px;
+        }
+        .icon-twitter {
+            background-image: url('../src/icons/sprite.png');
+            background-position: -32px -32px;
+            width: 32px;
+            height: 32px;
+        }
+        .icon-youtube {
+            background-image: url('../src/icons/sprite.png');
+            background-position: -64px 0px;
+            width: 32px;
+            height: 32px;
+        }
+        .icon-email {
+            background-image: url('../src/icons/sprite.png');
+            background-position: 0px 0px;
+            width: 32px;
+            height: 32px;
         }
     }
 
@@ -383,6 +425,26 @@ footer{
         display: flex;
         justify-content: space-between;
         margin-bottom: 15px;
-    }     
+        h2{
+            font-size: 20px;
+            font-family: "ProximaNova";
+            color: rgb(243, 238, 234);
+            line-height: 1.2;    
+            text-transform: uppercase;      
+        }
+    } 
+    
+    .copyrights{
+        width: 100%;
+        border-top: 1px solid rgba(107,107,106, 0.8);
+        padding-top: 16px;
+        padding-bottom: 27px;
+        p{
+            font-size: 0.6em;
+            font-family: "Myriad Pro";
+            color: rgb(179, 179, 179);
+            line-height: 1.2; 
+        }
+    }
 }
   
