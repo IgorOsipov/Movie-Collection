@@ -65,7 +65,6 @@ $(document).ready(function(){
         ]
     })
 
-    // setMovieBox(movieSearchText)
 
     function setMovieBox(text){
         $('.movie_box').empty()
