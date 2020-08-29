@@ -389,15 +389,26 @@ a, a:hover, button, button:hover, input:hover, .anime {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  min-height: 400px;
+}
+
+.content .movie_box #error, .content .movie_box #searchText {
+  text-align: center;
+  padding-top: 150px;
+  width: 100%;
+  font-family: 'Oswald', sans-serif;
 }
 
 .content .movie_box .movie_item {
-  width: 320px;
+  margin-right: 0.5%;
+  margin-left: 0.5%;
+  width: 32%;
+  min-width: 310px;
   height: 240px;
   overflow: hidden;
   margin-bottom: 20px;
@@ -405,8 +416,9 @@ a, a:hover, button, button:hover, input:hover, .anime {
 }
 
 .content .movie_box .movie_item img {
-  height: 100%;
-  width: auto;
+  height: auto;
+  width: 100%;
+  overflow: hidden;
 }
 
 .content .movie_box .movie_item .title {
@@ -419,7 +431,8 @@ a, a:hover, button, button:hover, input:hover, .anime {
   font-weight: bold;
   text-transform: uppercase;
   line-height: 1.2;
-  text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.6);
+  text-shadow: 0px 2px 35px rgba(0, 0, 0, 0.8);
+  text-align: end;
 }
 
 .content .movie_box .movie_item .movie_info {
@@ -447,7 +460,11 @@ a, a:hover, button, button:hover, input:hover, .anime {
   line-height: 1.2;
 }
 
-.content .pagination {
+.content .pagination_box {
+  display: none;
+}
+
+.content .pagination_box .pagination {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -465,15 +482,15 @@ a, a:hover, button, button:hover, input:hover, .anime {
   margin-bottom: 35px;
 }
 
-.content .pagination .pages_count {
+.content .pagination_box .pagination .pages_count {
   margin-right: 35px;
 }
 
-.content .pagination .items_per_page {
+.content .pagination_box .pagination .items_per_page {
   margin-right: 45px;
 }
 
-.content .pagination .buttons input {
+.content .pagination_box .pagination .buttons input {
   border: none;
   height: 20px;
   font-size: 1em;
@@ -481,7 +498,7 @@ a, a:hover, button, button:hover, input:hover, .anime {
   cursor: pointer;
 }
 
-.content .pagination .buttons input:hover {
+.content .pagination_box .pagination .buttons input:hover {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);

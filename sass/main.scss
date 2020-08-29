@@ -241,19 +241,30 @@
     
     .movie_box{
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
         flex-wrap: wrap;
+        min-height: 400px;
+        #error, #searchText{
+            text-align: center;
+            padding-top: 150px;
+            width: 100%;
+            font-family: 'Oswald', sans-serif;
+        }
+
         .movie_item{
-            width: 320px;
+            margin-right: 0.5%;
+            margin-left: 0.5%;
+            width: 32%;
+            min-width: 310px;
             height: 240px;
             overflow: hidden;
             margin-bottom: 20px;
-
             position: relative;
 
             img{
-                height: 100%;
-                width: auto;
+                height: auto;
+                width: 100%;
+                overflow: hidden;
             }
             .title{
                 position: absolute;
@@ -265,7 +276,8 @@
                 font-weight: bold;
                 text-transform: uppercase;
                 line-height: 1.2;
-                text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.6);
+                text-shadow: 0px 2px 35px rgba(0, 0, 0, 0.8);
+                text-align: end;
             }
                   
             .movie_info{
@@ -293,41 +305,45 @@
         }
     } 
     
-    .pagination{
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-
-        font-size: 0.8em;
-        font-family: "Roboto";
-        font-weight: 500;
-        color: rgb(0, 0, 0);
-        line-height: 1.2; 
-        
-        margin-bottom: 35px;
-
-        .pages_count{
-            margin-right: 35px;
-        }
-
-        .items_per_page{
-            margin-right: 45px;
-        }
-
-        .buttons{
-            input{
-                border: none;
-                height: 20px;
-                font-size: 1em; 
-                font-weight: 500; 
-                cursor: pointer;
-                &:hover{
-                    transform: scale(1.1);
-                    font-weight: 600;
-                }             
+    .pagination_box{
+        display: none;
+        .pagination{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+    
+            font-size: 0.8em;
+            font-family: "Roboto";
+            font-weight: 500;
+            color: rgb(0, 0, 0);
+            line-height: 1.2; 
+            
+            margin-bottom: 35px;
+    
+            .pages_count{
+                margin-right: 35px;
+            }
+    
+            .items_per_page{
+                margin-right: 45px;
+            }
+    
+            .buttons{
+                input{
+                    border: none;
+                    height: 20px;
+                    font-size: 1em; 
+                    font-weight: 500; 
+                    cursor: pointer;
+                    &:hover{
+                        transform: scale(1.1);
+                        font-weight: 600;
+                    }             
+                }
             }
         }
     }
+    
 }
 
 footer{
