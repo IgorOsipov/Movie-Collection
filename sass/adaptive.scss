@@ -116,17 +116,20 @@
                 margin-top: 25px;
             }
         }
-        .pagination{
-            justify-content: center;
-            flex-direction: column;
-            .pages_count{
-                margin-right: 5px;
-                margin-bottom: 10px;
-            }
-    
-            .items_per_page{
-                margin-right: 5px;
-                margin-bottom: 10px;
+        .pagination_box{
+            .pagination{
+                justify-content: center;
+                flex-direction: column;
+                .pages_count{
+                    margin-right: 0;
+                    margin-bottom: 15px;
+                }
+        
+                .items_per_page{
+                    margin-right: 0;
+                    margin-bottom: 15px;
+                    margin-top: 15px;
+                }
             }
         }
     }

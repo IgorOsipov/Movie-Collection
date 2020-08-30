@@ -784,7 +784,7 @@ footer .copyrights p {
   .content .content_search .input_field {
     margin-top: 25px;
   }
-  .content .pagination {
+  .content .pagination_box .pagination {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -793,13 +793,14 @@ footer .copyrights p {
     -ms-flex-direction: column;
     flex-direction: column;
   }
-  .content .pagination .pages_count {
-    margin-right: 5px;
-    margin-bottom: 10px;
+  .content .pagination_box .pagination .pages_count {
+    margin-right: 0;
+    margin-bottom: 15px;
   }
-  .content .pagination .items_per_page {
-    margin-right: 5px;
-    margin-bottom: 10px;
+  .content .pagination_box .pagination .items_per_page {
+    margin-right: 0;
+    margin-bottom: 15px;
+    margin-top: 15px;
   }
   footer .footer_box {
     -webkit-box-orient: vertical;

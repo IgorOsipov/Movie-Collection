@@ -1,6 +1,5 @@
 $(document).ready(function(){
     let currentPage = 1
-    let movies
     let movieSearchText = ''
 
     const menuButton = $('#menu_button')
@@ -10,7 +9,6 @@ $(document).ready(function(){
     const prevButton = $('#prev_button')
     const searchText = $('#search')
     const searchButton = $('#searchButton')
-    const pagination = $('.pagination')
     const paginationBox = $('.pagination_box')
 
     searchButton.click(function(){
@@ -50,6 +48,7 @@ $(document).ready(function(){
         setMovieBox(movieSearchText)
     })
 
+    //slider
     $('#slider').slick({
         arrows: true,
         dots: false,
@@ -65,10 +64,10 @@ $(document).ready(function(){
         ]
     })
 
-
+    //search
     function setMovieBox(text){
         $('.movie_box').empty()
-        $.get('http://www.omdbapi.com/?apikey=8b47da7b&s=' + text +'&page=' + currentPage,function(data){
+        $.get('http://www.omdbapi.com/?apikey=8b47da7b&s=' + text +'&page=' + currentPage +'&type=movie',function(data){
         if(data.Response == "True"){
             let movies = data.Search
             movies.forEach(function(item) {
@@ -79,7 +78,7 @@ $(document).ready(function(){
             paginationSet(data.totalResults)
         }else if(data.Response == "False"){
             $('.movie_box').append('<h2 id="error">Sorry, there are no results for your request.</h2>')
-            pagination.hide()
+            paginationBox.hide()
         }
     })
     }
